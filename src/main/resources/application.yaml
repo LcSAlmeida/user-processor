@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: user-processor
+  cloud:
+    aws:
+      region: us-east-1
+      credentials:
+        accessKey: test
+        secretKey: test
+      sqs:
+        endpoint: http://localhost:4566
+
+producer:
+  sqsQueue: create-user-queue
